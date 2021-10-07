@@ -1,6 +1,4 @@
 # About
-A basic command line file transfer program built using the Python sockets library.
-
 A client and a server application which allows a client to download a file of
 it's choosing from the server. The client and the server communicate through stream(TCP) sockets, exchanging both control and actual file data.
 
