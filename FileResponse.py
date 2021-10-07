@@ -44,6 +44,7 @@ class FileResponse:
             status_code = 0
             data = ""
             data_len = 0
+            print("COULDN'T FIND REQUESTED FILE")
         return cls(magic_no, type, status_code, data_len, data)
 
 

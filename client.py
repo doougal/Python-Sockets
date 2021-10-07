@@ -1,6 +1,6 @@
 """
 Client script for socket based file downloader
-Usage: python3 client.py server_ip server_port target_file
+Usage: python client.py server_ip server_port target_file
 
 3/8/21
 Alex Burling
@@ -19,7 +19,7 @@ from FileResponse import FileResponse
 def parse_args():
 
     if len(sys.argv) != 4:
-        sys.exit("Usage: python3 client.py server_ip server_port target_file.")
+        sys.exit("Usage: python client.py server_ip server_port target_file.")
 
     server_ip = str(sys.argv[1])
     server_port = int(sys.argv[2])
@@ -34,7 +34,7 @@ def parse_args():
         sys.exit("MALFORMED IP/HOSTNAME")
 
     if (os.path.exists(target_file)):
-        sys.exit("The requested file already exists locally.")
+        sys.exit("THE REQUESTED FILE ALREADY EXISTS LOCALLY")
 
     return server_ip, server_port, target_file, server_addr
 

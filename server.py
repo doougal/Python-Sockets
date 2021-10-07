@@ -1,6 +1,6 @@
 """
 Server script for socket based file downloader
-Usage: python3 server.py listen_port
+Usage: python server.py listen_port
 
 3/8/21
 Alex Burling
@@ -18,7 +18,7 @@ from FileResponse import FileResponse
 #Parses command line arguments and checks validity
 def parse_args():
     if len(sys.argv) != 2:
-        sys.exit("Usage: python3 server.py listen_port")
+        sys.exit("Usage: python server.py listen_port")
 
     port = int(sys.argv[1])
     if port < 1024 or port > 64000:
